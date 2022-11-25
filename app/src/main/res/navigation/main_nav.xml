@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.sathyapriyan.healthcare.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_patientProfileFragment"
+            app:destination="@id/patientProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/patientProfileFragment"
+        android:name="com.sathyapriyan.healthcare.PatientProfileFragment"
+        android:label="fragment_patient_profile"
+        tools:layout="@layout/fragment_patient_profile" >
+        <action
+            android:id="@+id/action_patientProfileFragment_to_doctorDetailFragment"
+            app:destination="@id/doctorDetailFragment" />
+        <action
+            android:id="@+id/action_patientProfileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <argument
+            android:name="logindata"
+            app:argType="com.sathyapriyan.healthcare.models.LoginResponse" />
+    </fragment>
+    <dialog
+        android:id="@+id/doctorDetailFragment"
+        android:name="com.sathyapriyan.healthcare.DoctorDetailFragment"
+        android:label="fragment_doctor_detail"
+        tools:layout="@layout/fragment_doctor_detail" >
+        <action
+            android:id="@+id/action_doctorDetailFragment_to_patientProfileFragment"
+            app:destination="@id/patientProfileFragment" />
+        <argument
+            android:name="patientData"
+            app:argType="com.sathyapriyan.healthcare.models.LoginResponse" />
+        <argument
+            android:name="doctorData"
+            app:argType="com.sathyapriyan.healthcare.models.FavouriteDoctorData" />
+        <argument
+            android:name="isFavourite"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_doctorDetailFragment_to_videoCallFragment"
+            app:destination="@id/videoCallFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/videoCallFragment"
+        android:name="com.sathyapriyan.healthcare.VideoCallFragment"
+        android:label="fragment_video_call"
+        tools:layout="@layout/fragment_video_call" >
+        <action
+            android:id="@+id/action_videoCallFragment_to_doctorDetailFragment"
+            app:destination="@id/doctorDetailFragment" />
+    </dialog>
+</navigation>

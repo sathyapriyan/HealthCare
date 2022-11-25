@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgViewProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/ic_launcher_background"
+                android:src="@drawable/ic_launcher_foreground"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textViewName"/>
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:gravity="center"
+                android:textSize="14dp"
+                app:layout_constraintStart_toEndOf="@+id/imgViewProfile"
+                app:layout_constraintTop_toTopOf="@+id/imgViewProfile"
+                app:layout_constraintBottom_toTopOf="@+id/textViewMail"
+                android:layout_marginStart="10dp" />
+            <TextView
+                android:id="@+id/textViewMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="444-5555-6666-7777-88888"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                app:layout_constraintStart_toEndOf="@+id/imgViewProfile"
+                app:layout_constraintTop_toBottomOf="@+id/textViewName"
+                app:layout_constraintBottom_toTopOf="@+id/textViewOnlineStatus"
+                android:layout_marginStart="10dp" />
+            <TextView
+                android:id="@+id/textViewOnlineStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" +91-9876543123"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="10dp"
+                app:layout_constraintStart_toStartOf="@+id/textViewMail"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMail"
+                app:layout_constraintBottom_toBottomOf="@+id/imgViewProfile"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_favorite"
+                android:layout_margin="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_star_rate"
+                android:drawablePadding="10dp"
+                android:text=" 5/5"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

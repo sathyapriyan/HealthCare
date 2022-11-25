@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">HealthCare</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--My Strings-->
+    <string name="login_title">Login</string>
+    <string name="hint_username">Username</string> <!--patient-->
+    <string name="username_value">patient</string>
+    <string name="hint_password">Password</string> <!--Test@987-->
+    <string name="password_value">Test@987</string>
+
+    <string name="btn_login_txt">Login</string>
+    <string name="doctors_list">Doctors List</string>
+    <string name="favourite">Favourite</string>
+    <string name="all">All</string>
+    <string name="contentDescription">Content Description</string>
+    <string name="sample_mail">sampleMail@mail.com</string>
+    <string name="sample_mobile">+91 9876543210</string>
+    <string name="rating_sample">5/5</string>
+    <string name="sample_age">56</string>
+    <string name="sample_gender">Male</string>
+    <string name="sample_bmi">H: 5.5 W: 50.5 BMI: 12</string>
+    <string name="sample_online_status">Offline</string>
+    <string name="call">Call</string>
+    <string name="add_favourite">Add</string>
+    <string name="remove_txt">Remove</string>
+    <string name="add_txt">Add</string>
+
+</resources>
