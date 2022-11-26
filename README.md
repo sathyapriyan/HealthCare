@@ -2,7 +2,7 @@
 
 ## :computer: Language
 
-- <a href="https://docs.oracle.com/en/java/javase/index.html" target="_blank">Lotlin</a>
+- <a href="https://docs.oracle.com/en/java/javase/index.html" target="_blank">Kotlin</a>
 
 ## :camera: ScreenShots
 
