@@ -14,7 +14,13 @@ data class FavouriteDoctorListResponse(
     @SerializedName("data")
     var favouriteDoctorData: List<FavouriteDoctorData>
 
-)
+): Serializable {
+
+    companion object {
+        private const val serialVersionUID: Long = 123
+    }
+
+}
 
 data class FavouriteDoctorData(
 

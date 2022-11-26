@@ -22,6 +22,7 @@ data class LoginResponse(
 
 }
 
+
 data class PatientData(
 
     @SerializedName("User")
@@ -41,7 +42,13 @@ data class PatientData(
     @SerializedName("device")
     var device: Device
 
-)
+): Serializable {
+
+    companion object {
+        private const val serialVersionUID: Long = 123
+    }
+
+}
 
 data class User(
     @SerializedName("id")
@@ -68,7 +75,13 @@ data class User(
     var ribbonUsername: String,
     @SerializedName("ribbon_password")
     var ribbonPassword: String
-)
+): Serializable {
+
+    companion object {
+        private const val serialVersionUID: Long = 123
+    }
+
+}
 
 data class Currency(
     @SerializedName("symbol")
@@ -79,7 +92,13 @@ data class Currency(
     var hospital: String,
     @SerializedName("country_id")
     var countryId: String
-)
+): Serializable {
+
+    companion object {
+        private const val serialVersionUID: Long = 123
+    }
+
+}
 
 data class PatientProfile(
     @SerializedName("id")
@@ -138,7 +157,13 @@ data class PatientProfile(
     var preferedLanguageId: String,
     @SerializedName("preferedlanguagename")
     var preferedLanguageName: String,
-)
+): Serializable {
+
+    companion object {
+        private const val serialVersionUID: Long = 123
+    }
+
+}
 
 data class PatientProfileLocation(
     @SerializedName("id")
@@ -173,7 +198,13 @@ data class PatientProfileLocation(
     var cityId: String,
     @SerializedName("city_name")
     var cityName: String
-)
+): Serializable {
+
+    companion object {
+        private const val serialVersionUID: Long = 123
+    }
+
+}
 
 data class NotitificationDetails(
 
@@ -192,7 +223,13 @@ data class NotitificationDetails(
     @SerializedName("totalcall")
     var totalCall: String
 
-)
+): Serializable {
+
+    companion object {
+        private const val serialVersionUID: Long = 123
+    }
+
+}
 
 data class Device(
     @SerializedName("status")
@@ -203,5 +240,11 @@ data class Device(
     var osId: String,
     @SerializedName("voip_token")
     var voipToken: String,
-)
+): Serializable {
+
+    companion object {
+        private const val serialVersionUID: Long = 123
+    }
+
+}
 
