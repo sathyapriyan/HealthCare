@@ -42,3 +42,12 @@
   <b>&emsp;</b>
   <b> 7.Video Call - callee Screen  </b>
 </span>
+
+## :hammer_and_wrench: Libraries 
+
+- Retrofit 2
+- Hilt
+- Coil
+- ViewmodelScope
+- LifecycleScope
+- DataStore
